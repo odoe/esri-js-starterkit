@@ -64,6 +64,17 @@
     "path": "widgets/header/header"
   },
   {
+    "name": "legend",
+    "path": "widgets/legend/legendmenuwidget",
+    "options": {
+      "settings": {
+        "operational": [
+          "censusLayer"
+        ]
+      }
+    }
+  },
+  {
     "name": "esri-locate",
     "type": "LocateButton",
     "path": "esri/dijit/LocateButton",

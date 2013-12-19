@@ -10,3 +10,6 @@
 [submodule "app/js/controllers"]
 	path = app/js/controllers
 	url = git@github.com:odoe/esri-widgetloader.git
+[submodule "app/js/widgets/legend"]
+	path = app/js/widgets/legend
+	url = git@github.com:odoe/esri-legendmenu-widget.git

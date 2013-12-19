@@ -1,0 +1,12 @@
+[submodule "app/js/widgets/map"]
+	path = app/js/widgets/map
+	url = git@github.com:odoe/esri-map-widget.git
+[submodule "app/js/widgets/header"]
+	path = app/js/widgets/header
+	url = git@github.com:odoe/esri-header-widget.git
+[submodule "app/js/widgets/touch"]
+	path = app/js/widgets/touch
+	url = git@github.com:odoe/esri-touch-widget.git
+[submodule "app/js/controllers"]
+	path = app/js/controllers
+	url = git@github.com:odoe/esri-widgetloader.git

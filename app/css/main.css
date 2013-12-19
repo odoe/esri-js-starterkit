@@ -1,0 +1,10 @@
+html,body{overflow-x:hidden;height:100%;width:100%;margin:0;padding:0;}
+body{font:14px "helvetica neue",arial,helvetica,freesans,"libaration sans","numbus sans l",sans-serif !important;color:#fff;}
+#locateDiv{position:absolute;top:95px;left:22px;z-index:50;}
+#geocoderDiv{display:block;position:absolute;z-index:2;top:10px;right:10px;}
+
+#app-name{margin-left:10px;}
+#container-header{margin-left:-2px;margin-right:2px;}
+.header-container{z-index:1;}
+
+#map{position:absolute;padding:0;top:50px;left:0;right:0;bottom:0;}#map .container{max-width:100% !important;}

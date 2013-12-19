@@ -1,0 +1,8 @@
+{
+  "name": "Esri-JS-Starterkit",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "Dojo-Bootstrap": "git@github.com:xsokev/Dojo-Bootstrap.git"
+  }
+}

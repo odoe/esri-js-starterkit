@@ -1,0 +1,100 @@
+{
+  "appName": "Esri Starter Kit",
+  "pageTitle": "Esri Starter Kit",
+  "proxy": {
+    "url": "proxy/proxy.php",
+    "alwaysUseProxy": false
+  },
+  "widgets": [
+    {
+    "name": "map",
+    "type": "map",
+    "path": "widgets/map/map",
+    "options": {
+      "mapOptions": {
+        "basemap": "topo",
+        "center": [-118.20959546463835,34.28548773859569],
+        "zoom": 10,
+        "showAttribution": false,
+        "sliderStyle": "large",
+        "fadeOnZoom": true
+      },
+      "operationalLayers": [{
+        "type": "dynamic",
+        "url": "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Census_USA/MapServer",
+        "id": "censusLayer",
+        "title": "Census",
+        "visible": true,
+        "opacity": 0.5,
+        "visibleLayers": [0,1,2,3,4,5]
+      },
+      {
+        "type":"feature",
+        "url":"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer/0",
+        "id":"highwayLayer",
+        "title": "Highway",
+        "opacity": 1,
+        "visible": true,
+        "outFields": ["*"],
+        "mode":1,
+        "outFields":["*"],
+        "drawingInfo": {
+	      "renderer":{
+		 "type":"simple",
+		 "symbol":{
+		    "type":"esriSLS",
+		    "style":"esriSLSSolid",
+		    "color":[
+		       250,
+		       0,
+		       255,
+		       255
+		    ],
+		    "width":2
+		 }
+		}
+        }
+      }
+      ]
+    }
+  },
+  {
+    "name": "header",
+    "type": "preload",
+    "path": "widgets/header/header"
+  },
+  {
+    "name": "esri-locate",
+    "type": "LocateButton",
+    "path": "esri/dijit/LocateButton",
+    "node": "locateDiv",
+    "target": "map_root"
+  },
+  {
+    "name": "esri-geocoder",
+    "type": "Geocoder",
+    "path": "esri/dijit/Geocoder",
+    "node": "geocoderDiv",
+    "options": {
+      "arcgisGeocoder": {
+        "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "Esri World Geocoder",
+        "placeholder": "Enter address"
+      }
+    }
+  },
+  {
+    "name": "touch",
+    "path": "widgets/touch/touchwidget",
+    "options": {
+      "settings": {
+        "delay": 500,
+        "innerSize": 10,
+        "innerColor": [255, 0, 0, 1],
+        "outerSize": 42,
+        "outerColor": [255, 0, 0, 0.25]
+      }
+    }
+  }
+  ]
+}

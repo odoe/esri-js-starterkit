@@ -10,11 +10,6 @@ module.exports = function (grunt) {
   grunt.initConfig({
     project: projectConfig,
     pkg: grunt.file.readJSON('package.json'),
-    karma: {
-      unit: {
-        configFile: 'spec/karma.conf.js'
-      }
-    },
     mocha_phantomjs: {
       all: {
         options: {

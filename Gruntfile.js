@@ -182,10 +182,25 @@ module.exports = function (grunt) {
         ],
         tasks: ['less:dev'],
         nospawn: true
+      },
+      code: {
+        files: [
+          '<%= project.app %>/*.js',
+          '<%= project.app %>/**/*.js',
+          '<%= project.app %>/**/**/*.js',
+          '<%= project.app %>/**/**/**/*.js',
+          'spec/*.js', 'spec/**/*.js',
+          'spec/**/**/*.js',
+          'spec/**/**/**/*.js',
+          'spec/**/**/**/**/*.js'
+        ],
+        tasks: ['connect', 'mocha_phantomjs'],
+        nospawn: true
       }
     }
   });
 
   grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('test', ['connect', 'mocha_phantomjs']);
   grunt.registerTask('default', ['clean', 'uglify:multi', 'htmlmin:prod', 'less:prod', 'copy:dev']);
 };

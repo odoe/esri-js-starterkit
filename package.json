@@ -13,6 +13,9 @@
     "grunt-contrib-concat": "~0.2.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-mocha-phantomjs": "~0.3.0",
-    "matchdep": "~0.1.2"
+    "matchdep": "~0.1.2",
+    "sinon": "~1.7.3",
+    "mocha": "~1.16.2",
+    "expect.js": "~0.2.0"
   }
 }

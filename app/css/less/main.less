@@ -1,5 +1,12 @@
 @import "theme";
 
+@from: #3C3C3C;
+@to: #222;
+@startClr: '#FF3C3C3C';
+@endClr: '#FF222222';
+@titleClr: #999;
+@fontClr: #000;
+
 // geo-locator
 #locateDiv {
   position: absolute;
@@ -16,3 +23,49 @@
   top: 10px;
   right: 10px;
 }
+
+// button like elements
+.as-button {
+  cursor: pointer;
+}
+
+// styles for dijit dialog.
+// change to adjust theme
+// mixin
+.gradient {
+  background-image:-webkit-gradient(linear, left 0, left 100%, from(@from),to(@to)) !important;
+  background-image:-webkit-linear-gradient(top,@from,0%, @to,100%) !important;
+  background-image:-moz-linear-gradient(top,@from 0, @to 100%) !important;
+  background-image:linear-gradient(to bottom, @from 0, @to 100%) !important;
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@startClr,endColorstr=@endClr,GradientType=0) !important;
+}
+
+.dijitDialogTitle {
+  color: @titleClr !important;
+}
+.dijitDialogTitleBar {
+  .gradient;
+}
+
+.dijitDialogPaneContent {
+  background: @from !important;
+  color: @fontClr;
+}
+
+.dijitMenuItemLabel.dijitMenuItemHover {
+  color: #fff !important;
+  background-color: none !important;
+  .gradient;
+}
+
+.dijitMenuBar {
+    padding: 0 !important;
+    border: 0 none lightGrey !important;
+    background-color: @to !important;
+}
+
+.dijitMenuBar .dijitMenuItemLabel {
+    color: @titleClr !important;
+}
+

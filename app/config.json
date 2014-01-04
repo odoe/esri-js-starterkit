@@ -37,22 +37,21 @@
         "visible": true,
         "outFields": ["*"],
         "mode":1,
-        "outFields":["*"],
         "drawingInfo": {
-	      "renderer":{
-		 "type":"simple",
-		 "symbol":{
-		    "type":"esriSLS",
-		    "style":"esriSLSSolid",
-		    "color":[
-		       250,
-		       0,
-		       255,
-		       255
-		    ],
-		    "width":2
-		 }
-		}
+          "renderer":{
+            "type":"simple",
+            "symbol":{
+              "type":"esriSLS",
+              "style":"esriSLSSolid",
+              "color":[
+                250,
+                0,
+                255,
+                255
+              ],
+              "width":2
+            }
+          }
         }
       }
       ]
@@ -91,6 +90,16 @@
         "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
         "name": "Esri World Geocoder",
         "placeholder": "Enter address"
+      }
+    }
+  },
+  {
+    "name": "print",
+    "path": "widgets/print/print",
+    "options": {
+      "printUrl": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+      "printParams": {
+        "async": true
       }
     }
   },

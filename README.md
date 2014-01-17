@@ -6,7 +6,7 @@ This is a starter kit for [ArcGIS JavaScript](http://developers.arcgis.com/en/ja
 This application builds on multiple smaller modules, focusing on bringing all the little bits together. It's built with nearly pure widgets from various other git repos.
 
 # How to use
-* Requires [node](http://nodejs.org/) and [Grunt](http://gruntjs.com/).
+* Requires [node](http://nodejs.org/), [Grunt](http://gruntjs.com/) and [bower](http://bower.io/).
 * Install using `git clone git@github.com:odoe/esri-js-starterkit.git --recursive`
 * Or `git clone git@github.com:odoe/esri-js-starterkit.git`, `git submodules init`, `git submodules update`
 * When downloaded run `npm install` and `bower install`

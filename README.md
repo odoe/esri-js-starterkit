@@ -9,6 +9,8 @@ This application builds on multiple smaller modules, focusing on bringing all th
 * Requires [node](http://nodejs.org/) and [Grunt](http://gruntjs.com/).
 * Install using `git clone git@github.com:odoe/esri-js-starterkit.git --recursive`
 * Or `git clone git@github.com:odoe/esri-js-starterkit.git`, `git submodules init`, `git submodules update`
+* When downloaded run `npm install` and `bower install`
+* You can also run the `setup.sh` script to accomplsih all of the above.
 
 # Note
 In order to use the [Print Widget](https://github.com/odoe/esri-print-widget) you will need a valid proxy or use a Print Task from your own ArcGIS Server.

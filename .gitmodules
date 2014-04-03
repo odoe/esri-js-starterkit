@@ -13,3 +13,6 @@
 [submodule "app/js/widgets/legend"]
 	path = app/js/widgets/legend
 	url = git@github.com:odoe/esri-legendmenu-widget.git
+[submodule "app/js/widgets/print"]
+	path = app/js/widgets/print
+	url = git@github.com:odoe/esri-print-widget.git

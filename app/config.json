@@ -121,6 +121,16 @@
     }
   },
   {
+    "name": "print",
+    "path": "widgets/print/print",
+    "options": {
+      "printUrl": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+      "printParams": {
+        "async": true
+      }
+    }
+  },
+  {
     "name": "touch",
     "path": "widgets/touch/touchwidget",
     "options": {

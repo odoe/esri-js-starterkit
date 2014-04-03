@@ -23,4 +23,4 @@ body{font:14px "helvetica neue",arial,helvetica,freesans,"libaration sans","numb
 td{line-height:10px !important;}
 .lgnd-icon{margin-top:-5px;}
 
-#map{position:absolute;padding:0;top:50px;left:0;right:0;bottom:0;}#map .container{max-width:100% !important;}
+#map-div{position:absolute;padding:0;top:50px;left:0;right:0;bottom:0;}#map-div .container{max-width:100% !important;}

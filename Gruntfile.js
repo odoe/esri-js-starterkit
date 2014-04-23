@@ -10,6 +10,9 @@ module.exports = function (grunt) {
   grunt.initConfig({
     project: projectConfig,
     pkg: grunt.file.readJSON('package.json'),
+    karma: {
+      unit: { configFile: 'karma.conf.js', background: true }
+    },
     mocha_phantomjs: {
       all: {
         options: {
@@ -159,7 +162,7 @@ module.exports = function (grunt) {
         files: {
           '<%= project.app %>/css/main.css': [
             '<%= project.app %>/css/less/main.less',
-            '<%= project.app %>/js/widgets/**/css/*.less'
+            '<%= project.app %>/js/**/**/css/*.less'
           ]
         }
       },
@@ -167,8 +170,8 @@ module.exports = function (grunt) {
         files: {
           '<%= project.dist %>/css/main.css': [
             '<%= project.app %>/css/less/main.less',
-            '<%= project.app %>/js/widgets/**/css/*.less',
-            '<%= project.app %>/js/widgets/**/**/css/*.less'
+            '<%= project.app %>/js/**/**/css/*.less',
+            '<%= project.app %>/js/**/**/**/css/*.less'
           ]
         }
       }
@@ -177,8 +180,8 @@ module.exports = function (grunt) {
       styles: {
         files: [
           '<%= project.app %>/css/less/*.less',
-          '<%= project.app %>/js/widgets/**/css/*.less',
-          '<%= project.app %>/js/widgets/**/**/css/*.less'
+          '<%= project.app %>/js/**/**/css/*.less',
+          '<%= project.app %>/js/**/**/**/css/*.less'
         ],
         tasks: ['less:dev'],
         nospawn: true
@@ -194,13 +197,13 @@ module.exports = function (grunt) {
           'spec/**/**/**/*.js',
           'spec/**/**/**/**/*.js'
         ],
-        tasks: ['connect', 'mocha_phantomjs'],
-        nospawn: true
+        tasks: ['karma:unit:run'],
+        options: { livereload: true }
       }
     }
   });
 
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dev', ['karma:unit:start', 'watch']);
   grunt.registerTask('test', ['connect', 'mocha_phantomjs']);
   grunt.registerTask('default', ['clean', 'uglify:multi', 'htmlmin:prod', 'less:prod', 'copy:dev']);
 };

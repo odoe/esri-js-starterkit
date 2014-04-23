@@ -7,8 +7,8 @@
 </head>
 <body>
 <div id="mocha"></div>
-<script type="text/javascript" src="node_modules/expect.js/expect.js"></script>
-<script type="text/javascript" src="//js.arcgis.com/3.8"></script>
+<script type="text/javascript" src="node_modules/chai/chai.js"></script>
+<script type="text/javascript" src="//js.arcgis.com/3.9"></script>
 <script type="text/javascript" src="node_modules/mocha/mocha.js"></script>
 <script type='text/javascript' src='node_modules/sinon/pkg/sinon-1.7.3.js'></script>
 <!-- source files -->
@@ -24,6 +24,7 @@
     mocha.ignoreLeaks();
     mocha.globals(['resize']);
 </script>
+<script src="http://localhost:35729/livereload.js"></script>
 <script type="text/javascript" src="spec/main.js"></script>
 
 </body>

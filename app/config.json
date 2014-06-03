@@ -11,6 +11,7 @@
     "path":"widgets/map/map",
     "options":{
       "id":"map-div",
+      "saveLocationOnUnload": true,
       "mapOptions":{
         "center":[
           -118.20959546463835,

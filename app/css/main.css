@@ -24,3 +24,8 @@ td{line-height:10px !important;}
 .lgnd-icon{margin-top:-5px;}
 
 #map-div{position:absolute;padding:0;top:50px;left:0;right:0;bottom:0;}#map-div .container{max-width:100% !important;}
+.esriSimpleSlider{border:1px solid #cccccc;top:15px;left:15px;}
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton,.esriSimpleSliderVertical .esriSimpleSliderDecrementButton{font-weight:500;font-size:20px;line-height:27px;}
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton{border-bottom:1px solid #cccccc;}
+
+.progress-spin{margin-left:3px;font-size:0.8em;color:#fff !important;}
